@@ -1,0 +1,14 @@
+---
+import computerImage from '../images/computer.svg'
+const { imageSource, header, paragraph } = Astro.props
+---
+
+<section class="flex max-w-xs flex-col items-center justify-center gap-6 text-center text-white">
+	<img src={imageSource} alt="Computer" />
+	<div class="flex flex-col items-center justify-center gap-2">
+		<h1 class="text-lg font-bold leading-6">{header}</h1>
+		<p class="text-sm leading-5">
+			{paragraph}
+		</p>
+	</div>
+</section>
