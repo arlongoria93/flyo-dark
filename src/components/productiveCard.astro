@@ -1,8 +1,9 @@
 ---
 import productive from '../images/productive.png'
+import rightArrow from '../images/rightArrow.svg'
 ---
 
-<section class="flex max-w-xs flex-col items-center gap-12 text-start text-white">
+<section class="mb-48 flex max-w-xs flex-col items-center gap-12 text-start text-white">
 	<img src={productive} alt="Productive" class="px-2" />
 	<section class="flex flex-col gap-4">
 		<h1 class="text-lg font-bold leading-5">Stay productive, wherever you are</h1>
@@ -14,6 +15,11 @@ import productive from '../images/productive.png'
 			Securely share files and folders with friends, family and colleagues for live collaboration.
 			No email attachments required.
 		</p>
-		<a class="text-xs text-[#62E0D9] underline underline-offset-8">See how Flyo works</a>
+		<div class="flex flex-col items-center self-start">
+			<div class="flex flex-row items-center gap-2 border-b pb-1">
+				<a class="text-xs text-[#62E0D9]">See how Flyo works</a>
+				<img src={rightArrow} class="" />
+			</div>
+		</div>
 	</section>
 </section>
