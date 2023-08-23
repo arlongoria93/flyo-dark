@@ -8,6 +8,10 @@ import shield from '../images/shield.svg'
 import clockCheck from '../images/clockCheck.svg'
 import folder from '../images/folder.svg'
 import ProductiveCard from '../components/productiveCard.astro'
+import avatar1 from '../images/avatar1.png'
+import avatar2 from '../images/avatar2.png'
+import avatar3 from '../images/avatar3.png'
+import CommentCard from '../components/CommentCard.astro'
 ---
 
 <Layout title="Welcome to Astro.">
@@ -37,5 +41,10 @@ import ProductiveCard from '../components/productiveCard.astro'
 			/>
 		</section>
 		<ProductiveCard />
+		<section class="mb-40 flex flex-col gap-6">
+			<CommentCard avatar={avatar1} name="Satish Patel" />
+			<CommentCard avatar={avatar2} name="Bruce McKenzie" />
+			<CommentCard avatar={avatar3} name="Iva Boyd" />
+		</section>
 	</main>
 </Layout>
