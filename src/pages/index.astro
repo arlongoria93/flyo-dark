@@ -1,7 +1,75 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from '../layouts/Layout.astro'
+import hero from '../images/hero.png'
 ---
 
 <Layout title="Welcome to Astro.">
-  <main></main>
+	<main class="flex flex-col items-center">
+		<img src={hero} alt="hero img" width="304" class="mt-6 border" />
+		<section class="font-raleway flex flex-col items-center text-center text-white">
+			<h1 class="w-80 text-2xl font-bold leading-9">
+				All your files in one secure location, accessible anywhere.
+			</h1>
+
+			<p class="w-80 text-base leading-5">
+				Fylo stores all your most important files in one secure location. Access them wherever you
+				need, share and collaborate with friends family, and co-workers.
+			</p>
+
+			<button>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="240"
+					height="48"
+					viewBox="0 0 240 48"
+					fill="none"
+				>
+					<g filter="url(#filter0_d_0_8)">
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M0 24C0 10.7452 10.7452 0 24 0H216C229.255 0 240 10.7452 240 24C240 37.2548 229.255 48 216 48H24C10.7452 48 0 37.2548 0 24Z"
+							fill="url(#paint0_linear_0_8)"></path>
+					</g>
+					<defs>
+						<filter
+							id="filter0_d_0_8"
+							x="-4"
+							y="-3"
+							width="252"
+							height="60"
+							filterUnits="userSpaceOnUse"
+							color-interpolation-filters="sRGB"
+						>
+							<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+							<feColorMatrix
+								in="SourceAlpha"
+								type="matrix"
+								values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+								result="hardAlpha"></feColorMatrix>
+							<feOffset dx="2" dy="3"></feOffset>
+							<feGaussianBlur stdDeviation="3"></feGaussianBlur>
+							<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15925 0"
+							></feColorMatrix>
+							<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_8"
+							></feBlend>
+							<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_8" result="shape"
+							></feBlend>
+						</filter>
+						<linearGradient
+							id="paint0_linear_0_8"
+							x1="-47.5"
+							y1="-31"
+							x2="-20.9944"
+							y2="100.576"
+							gradientUnits="userSpaceOnUse"
+						>
+							<stop stop-color="#63E1D9"></stop>
+							<stop offset="1" stop-color="#34A0CD"></stop>
+						</linearGradient>
+					</defs>
+				</svg>Get Started</button
+			>
+		</section>
+	</main>
 </Layout>
