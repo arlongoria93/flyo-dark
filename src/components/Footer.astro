@@ -1,0 +1,51 @@
+---
+import logo from '../images/logo.svg'
+import phone from '../images/phone.svg'
+import location from '../images/location.svg'
+import email from '../images/email.svg'
+import facebook from '../images/facebook.svg'
+import twitter from '../images/twitter.svg'
+import instagram from '../images/instagram.svg'
+---
+
+<footer class="mx-auto mb-14 ml-7 mt-20 flex flex-col font-open-sans text-white">
+	<img src={logo} alt="logo" class="ml-1 h-[31px] w-[108px]" />
+	<div class="mt-9 flex flex-col gap-4">
+		<div class="flex flex-row items-center gap-4">
+			<img src={location} alt="location" class="h-[24px] w-[24px]" />
+			<p class="w-72">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				labore et dolore magna aliqua
+			</p>
+		</div>
+		<div class="flex flex-row items-center gap-4">
+			<img src={phone} alt="phone" class="h-[24px] w-[24px]" />
+			<p>+1-543-123-4567</p>
+		</div>
+		<div class="flex flex-row items-center gap-4">
+			<img src={email} alt="mail" class="h-[24px] w-[24px]" />
+			<p>example@fylo.com</p>
+		</div>
+	</div>
+	<div class="mt-14 flex flex-col items-start gap-4">
+		<h1 class="text-base">About Us</h1>
+
+		<h1 class="text-base">Jobs</h1>
+
+		<h1 class="text-base">Press</h1>
+
+		<h1 class="text-base">Blog</h1>
+	</div>
+	<div class="mt-14 flex flex-col items-start gap-4">
+		<h1 class="text-base">Contact Us</h1>
+
+		<h1 class="text-base">Terms</h1>
+
+		<h1 class="text-base">Privacy</h1>
+	</div>
+	<div class="mt-14 flex flex-row items-center gap-3 self-center">
+		<img src={facebook} class="w-[27px]" />
+		<img src={twitter} class="w-[27px]" />
+		<img src={instagram} class="w-[27px]" />
+	</div>
+</footer>

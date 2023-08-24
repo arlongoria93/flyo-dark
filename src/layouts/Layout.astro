@@ -2,6 +2,7 @@
 import '@fontsource-variable/open-sans'
 import '@fontsource-variable/raleway'
 import Navbar from '../components/Navbar.astro'
+import Footer from '../components/Footer.astro'
 interface Props {
 	title: string
 }
@@ -22,5 +23,6 @@ const { title } = Astro.props
 	<body class="bg-main-bg">
 		<Navbar />
 		<slot />
+		<Footer />
 	</body>
 </html>
